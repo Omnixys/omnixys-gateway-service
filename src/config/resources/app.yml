@@ -1,0 +1,29 @@
+# ==============================================================================
+# N o d e
+# ==============================================================================
+node:
+  port: 8000
+
+# ==============================================================================
+# S U B G R A P H
+# ==============================================================================
+subgraph:
+  person: http://localhost:7001/graphql
+  account: http://localhost:7002/graphql
+  shoppingCart: http://localhost:7101/graphql
+  order: http://localhost:7102/graphql
+  payment: http://localhost:7201/graphql
+  invoice: http://localhost:7202/graphql
+  transaction: http://localhost:7203/graphql
+  product: http://localhost:7301/graphql
+  inventory: http://localhost:7302/graphql
+  #activity: http://localhost:7401/graphql
+  notification: http://localhost:7402/graphql
+  authentication: http://localhost:7501/graphql
+
+# ==============================================================================
+# K A F K A
+# ==============================================================================
+kafka:
+  host: localhost
+  groupId: gentlecorp-gateway-service
