@@ -1,7 +1,6 @@
 /** @type {import('typedoc').TypeDocOptions} */
 module.exports = {
-    // out: '../.extras/doc/api',
-    out: '../docs/backend',
+    out: '.extras/doc/api',
     entryPoints: ['src'],
     includeVersion: true,
     // plugin: ['typedoc-plugin-markdown'],
@@ -9,10 +8,10 @@ module.exports = {
     excludeExternals: true,
     excludePrivate: true,
     theme: 'default',
-    // theme: 'markdown',
+    // favicon: 'favicon.ico',
     validation: {
         invalidLink: true,
     },
-    name: 'RoleMapper Backend API Documentation',
-    readme: '../README.md',
+    name: 'Omnixys GatewayAPI Documentation',
+    readme: './README.md',
 };

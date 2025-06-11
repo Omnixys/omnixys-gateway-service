@@ -19,14 +19,13 @@ subgraph:
   payment: http://localhost:7201/graphql
   person: http://localhost:7001/graphql
   product: http://localhost:7301/graphql
+  profile: http://localhost:7003/graphql
   shoppingCart: http://localhost:7101/graphql
   transaction: http://localhost:7203/graphql
-
-
 
 # ==============================================================================
 # K A F K A
 # ==============================================================================
 kafka:
   host: localhost
-  groupId: gentlecorp-gateway-service
+  groupId: omnixys-gateway-service

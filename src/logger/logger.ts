@@ -15,10 +15,10 @@ import { parentLogger } from '../config/logger.js';
  * @param context Der Kontext
  * @param kind i.a. `class`
  */
-export const getLogger: (
+export const getLogger: (context: string, kind?: string) => pino.Logger<string> = (
     context: string,
-    kind?: string,
-) => pino.Logger<string> = (context: string, kind = 'class') => {
+    kind = 'class',
+) => {
     const bindings: Record<string, string> = {};
     // "indexed access" auf eine Property, deren Name als Wert im Argument "kind" uebergeben wird
     // eslint-disable-next-line security/detect-object-injection

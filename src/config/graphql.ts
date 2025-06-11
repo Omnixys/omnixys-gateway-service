@@ -16,14 +16,13 @@
  * GRAPHQL_SCHEMA=false // Nutzt ein einziges GraphQL-Schema.
  * ```
  */
-import { ApolloFederationDriver, ApolloFederationDriverConfig} from '@nestjs/apollo';
+import { ApolloFederationDriver, ApolloFederationDriverConfig } from '@nestjs/apollo';
 
 /**
  * Das Konfigurationsobjekt für GraphQL (siehe src\app.module.ts).
-*/
+ */
 export const graphQlModuleOptions: ApolloFederationDriverConfig = {
-    autoSchemaFile: { path: "schema.gql", federation: 2 },
+    autoSchemaFile: { path: 'schema.gql', federation: 2 },
     driver: ApolloFederationDriver,
     playground: false,
 };
-
