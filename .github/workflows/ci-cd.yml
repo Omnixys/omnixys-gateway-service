@@ -1,4 +1,4 @@
-name: CI/CD Pipeline – Omnixys Notification Service
+name: CI/CD Pipeline – Omnixys Gateway Service
 
 on:
   pull_request:
