@@ -2,7 +2,7 @@ import { type CorsOptions } from '@nestjs/common/interfaces/external/cors-option
 
 export const corsOptions: CorsOptions = {
     // Access-Control-Allow-Origin (nur Requests von origin zulassen)
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000', 'https://omnixys.com', 'https://omnixys-sphere-ihh4dk9zv-omnixys.vercel.app',],
     // origin: true,
 
     // Access-Control-Allow-Methods (hier: default)
