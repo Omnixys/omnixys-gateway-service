@@ -5,6 +5,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { Request } from 'express';
 import { subgraph } from './config/subgraph.js';
 import { LoggerModule } from './logger/logger.module.js';
+import { HealthModule } from './health/health.module.js';
 
 const handleAuth = ({ req }: { req: Request }) => {
     const token = req.headers?.authorization ?? null;
@@ -55,6 +56,7 @@ const handleAuth = ({ req }: { req: Request }) => {
             },
         }),
         LoggerModule,
+        HealthModule
     ],
 })
 export class AppModule {}
