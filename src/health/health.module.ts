@@ -2,8 +2,8 @@ import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TerminusModule } from '@nestjs/terminus';
-import { HealthController } from './health.controller';
-import { KafkaIndicator } from './kafka.indicator';
+import { HealthController } from './health.controller.js';
+import { KafkaIndicator } from './kafka.indicator.js';
 
 @Module({
     imports: [

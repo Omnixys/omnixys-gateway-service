@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { HealthCheck, HealthCheckService, HttpHealthIndicator } from '@nestjs/terminus';
-import { KafkaIndicator } from './kafka.indicator';
+import { KafkaIndicator } from './kafka.indicator.js';
 
 @Controller('health')
 export class HealthController {
